@@ -16,7 +16,7 @@ package chap6;
  *             값 의 자료형이 리턴타입과 같거나, 리턴타입으로 자동형변환이 되는 경우 여야 한다.           
  */
 class Math1 {
-	char add1(int a, int b) {
+	char add1(int a, int b) {  //인스턴스메서드
 		return (char) (a + b);
 	}
 	long add2(int a , int b) {
@@ -27,7 +27,7 @@ class Math1 {
 	}
 }
 public class MathEx1 {
-	public static void main(String[] args) {
+	public static void main(String[] args) {  //클래스 메서드
 		Math1 m = new Math1();
 		System.out.println(m.add1(45, 20));
 		System.out.println(m.add2(10, 20));
